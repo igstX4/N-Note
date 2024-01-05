@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: var(--main-header-color);
+  height: 60px;
+  align-items: center;
+  h1 {
+    color: var(--nav-bar-text-color);
+    font-weight: 500;
+  }
+}
+
+.title {
+  color: var(--nav-bar-text-color);
+  margin-left: 35px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.name {
+  color: var(--nav-bar-text-color);
+}
+
+.signout {
+  color: var(--nav-bar-text-color);
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--nav-bar-bg-color);
+  min-height: 93.6vh;
+  width: 400px;
+}
+.layoutdiv {
+  display: flex;
+  height: 93.6%;
+}
+.add {
+  color: var(--nav-bar-text-color);
+  font-size: 24px;
+  margin-right: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.adddiv {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.titleInput {
+  color: var(--nav-bar-text-color);
+  border: 0;
+  outline: none;
+  font-weight: bolder;
+  font-size: 32px;
+  background-color: transparent;
+  text-align: center;
+}
+.error1 {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  font-size: 23px;
+}
+.icon {
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.titleDiv {
+  display: flex;
+  align-items: center;
+}
+.toCreate {
+  text-decoration: none;
+  color: white;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 28px;
+}
+.titleBurger {
+  color: var(--nav-bar-text-color);
+  cursor: pointer;
+  text-align: center;
+}
+.logOut  {
+  display: none !important;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 860px) {
+  .navbar {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+
+}
+@media (max-width: 1000px) {
+  .toCreate {
+    font-size: 20px;
+  }
+}
+@media (max-width: 586px) {
+  .signout {
+    display: none;
+  }
+  .logOut {
+    display: flex !important;
+  }
+}
